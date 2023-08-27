@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="container">
+        <div id="toolbar">
+            <div id="sizeNContainer">
+                <label for="sizeN">N (board is NxN)&nbsp;</label>
+                <input id="sizeN"  type="number" value="16" min="1" max="100">
+            </div>
+            
+            <div id="colorType">
+                <div class="unicolorOption">
+                    <input type="radio" id="unicolor" name="colorType" value="unicolor" checked />
+                    <label for="unicolor">Unicolor</label>
+
+                    <input id="colorPicker" type="color" value="#080808">
+                </div>
+                <div>
+                    <input type="radio" id="randColor" name="colorType" value="randColor" />
+                    <label for="randColor">Random Color</label>
+                </div>
+            </div>
+
+            <button id="clear">Clear</button>
+        </div>
+        <div id="board"></div>
+    </div>
+
+</body>
+</html>

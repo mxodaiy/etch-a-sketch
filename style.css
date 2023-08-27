@@ -1,0 +1,65 @@
+:root{
+    --size: 600px;
+}
+html{
+    font-size: 16px;
+}
+body{
+    width: calc(var(--size)*1.5);
+    max-width: 1080px;
+    margin: 15px auto;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#container{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#toolbar{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#toolbar input{
+    margin-bottom: auto;
+}
+
+#sizeNContainer{
+    display: flex;
+    flex-flow: column wrap;
+}
+
+#clear{
+    align-self: stretch;
+    color: white;
+    background-color: royalblue;
+    border-radius: 3px;
+}
+
+#unicolorOption {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#colorPicker{
+    height: 1rem;
+    width: 2rem;
+}
+
+#board {
+    width: var(--size);
+    height: var(--size);
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0 auto;
+    justify-content: space-between;
+}
