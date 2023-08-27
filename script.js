@@ -9,7 +9,7 @@ function paintBlock(){
     if (colorType === 'unicolor'){
         return(colorPicker.value)
     }else{
-        return('#'+Math.floor(Math.random()*16777215).toString(16))
+        return('#' + Math.floor(Math.random()*16777215).toString(16))
     }
 }
 
@@ -38,3 +38,7 @@ function clearBoard(){
 createBoard();
 sizeNInput.addEventListener('change',() => clearBoard())
 clearBtn.addEventListener('click',() => clearBoard())
+colorPicker.addEventListener('change',() =>{
+    document.querySelector('#unicolor').checked = true;
+    document.querySelector('#randColor').checked = false;
+})
