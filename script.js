@@ -21,7 +21,7 @@ function createBoard(){
     for(let i=0; i<Math.pow(sizeN,2); i++){
         d = document.createElement('div');
         d.style.backgroundColor = 'White';
-        d.style.border = '0.5px solid #888888';
+        d.style.border = '0.5px solid #eeeeee';
         d.style.padding = 0;
         d.style.margin = 0;
         d.style.width = `${blockSize}px`;
@@ -30,7 +30,7 @@ function createBoard(){
         d.addEventListener('mouseenter',(event)=> event.target.style.backgroundColor = paintBlock())
         board.appendChild(d);
     }
-    board.style.gap = `${(board.clientWidth - blockSize*sizeN)/(sizeN+3)}px`;
+    board.style.gap = `${(board.clientWidth - blockSize*sizeN)/(sizeN+4)}px`;
 }
 
 function clearBoard(){
