@@ -35,7 +35,7 @@ body{
 #toolbar input{
     margin-bottom: auto;
 }
-#help>p{
+#help li{
     font-size: 0.8rem;
 }
 
