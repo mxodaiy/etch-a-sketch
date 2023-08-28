@@ -10,9 +10,13 @@
 <body>
     <div id="container">
         <div id="toolbar">
+            <details id="help">
+                <summary>Help</summary>
+                <p>Click and drag over cells you want to fill.</p>
+            </details>
             <div id="sizeNContainer">
-                <label for="sizeN">N -board is NxN-</label>
-                <input id="sizeN"  type="number" value="16" min="1" max="100">
+                <label for="sizeN">N&nbsp;<span style="font-size: 0.8rem;color: grey;">[board is NxN]</span></label>
+                <input id="sizeN"  type="number" value="40" min="1" max="100">
             </div>
             
             <div id="colorType">

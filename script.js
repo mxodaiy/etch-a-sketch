@@ -3,7 +3,8 @@ let clearBtn = document.querySelector('#clear');
 let sizeNInput = document.getElementById('sizeN');
 let colorPicker = document.querySelector('#colorPicker');
 
-let blockBorderSize = 1; // in pixels
+document.addEventListener('mousedown', ()=> mouseDown = true);
+document.addEventListener('mouseup', ()=> mouseDown = false);
 
 function paintBlock(){
     colorType = document.querySelector('[type="radio"][name="colorType"]:checked').value;
@@ -27,7 +28,7 @@ function createBoard(){
         d.style.width = `${blockSize}px`;
         d.style.height = `${blockSize}px`;
         d.style.flex = '0 0 auto';
-        d.addEventListener('mouseenter',(event)=> event.target.style.backgroundColor = paintBlock())
+        d.addEventListener('mousemove',(event)=>{ if(mouseDown) {event.target.style.backgroundColor = paintBlock()}})
         board.appendChild(d);
     }
     board.style.gap = `${(board.clientWidth - blockSize*sizeN)/(sizeN+4)}px`;

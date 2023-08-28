@@ -28,11 +28,15 @@ body{
     display: flex;
     flex-flow: column wrap;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+    max-width: 8rem;
 }
 
 #toolbar input{
     margin-bottom: auto;
+}
+#help>p{
+    font-size: 0.8rem;
 }
 
 #sizeNContainer{
@@ -47,6 +51,7 @@ body{
     border-radius: 8px;
     font-size: 22px;
     font-weight: 800;
+    align-self: stretch;
 }
 
 #unicolorOption {
