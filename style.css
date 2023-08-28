@@ -2,7 +2,8 @@
     --size: 600px;
 }
 html{
-    font-size: 16px;
+    font-size: 18px;
+    font-family: Georgia, Times, 'Times New Roman', serif;
 }
 body{
     width: calc(var(--size)*1.5);
@@ -10,7 +11,7 @@ body{
     margin: 15px auto;
 }
 *{
-    padding: 0;
+    padding: 0;   
     margin: 0;
     box-sizing: border-box;
 }
@@ -18,6 +19,9 @@ body{
 #container{
     display: flex;
     flex-flow: row wrap;
+    background-color: rgb(167, 205, 255);
+    border-radius: 8px;
+    padding: 16px 36px;
 }
 
 #toolbar{
@@ -40,7 +44,9 @@ body{
     align-self: stretch;
     color: white;
     background-color: royalblue;
-    border-radius: 3px;
+    border-radius: 8px;
+    font-size: 22px;
+    font-weight: 800;
 }
 
 #unicolorOption {
@@ -58,8 +64,10 @@ body{
 #board {
     width: var(--size);
     height: var(--size);
+    margin: auto;
     display: flex;
     flex-flow: row wrap;
-    margin: 0 auto;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    background-color: #888888;
 }
